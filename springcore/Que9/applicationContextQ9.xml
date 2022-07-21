@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+http://www.springframework.org/schema/context
+http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+
+	<context:annotation-config />
+	
+<bean id="dbean1" class="com.springcore.Que9.Distance">
+	<property name="city1" value="mumbai" />
+	<property name="city2" value="pune" />
+	<property name="distance" value="180"></property>
+</bean>
+
+<bean id="dbean2" class="com.springcore.Que9.Distance">
+	<property name="city1" value="nagpur" />
+	<property name="city2" value="mumbai" />
+	<property name="distance" value="780" />
+</bean>
+
+<bean id="dbean3" class="com.springcore.Que9.Distance">
+	<property name="city1" value="satara" />
+	<property name="city2" value="mumbai" />
+	<property name="distance" value="360" />
+</bean>
+
+
+
+
+
+
+</beans>

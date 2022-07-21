@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+http://www.springframework.org/schema/context
+http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+
+<context:annotation-config />
+
+<bean id="resbean1" class="com.springcore.Que11.Result">
+	<constructor-arg name="rollno" value="1" />
+	<constructor-arg name="maths" value="76" />
+	<constructor-arg name="hindi" value="85" />
+	<constructor-arg name="english" value="93" />
+	<constructor-arg name="science" value="98" />
+</bean>
+
+<bean id="stdbean1" class="com.springcore.Que11.Student">
+	<constructor-arg name="rollno" value="101" />
+	<constructor-arg name="sname" value="Akshay" />
+	<constructor-arg name="dob" value="07-07-1997" />
+	<constructor-arg name="clsname" value="11th" />
+	<constructor-arg name="section" value="A" />
+	<constructor-arg>
+		<ref bean="resbean1"></ref>
+	</constructor-arg>
+</bean>
+
+<bean id="resbean2" class="com.springcore.Que11.Result">
+	<constructor-arg name="rollno" value="2" />
+	<constructor-arg name="maths" value="84" />
+	<constructor-arg name="hindi" value="94" />
+	<constructor-arg name="english" value="79" />
+	<constructor-arg name="science" value="93" />
+</bean>
+
+<bean id="stdbean2" class="com.springcore.Que11.Student">
+	<constructor-arg name="rollno" value="102" />
+	<constructor-arg name="sname" value="Prashant" />
+	<constructor-arg name="dob" value="18-12-1997" />
+	<constructor-arg name="clsname" value="12th" />
+	<constructor-arg name="section" value="B" />
+	<constructor-arg>
+		<ref bean="resbean2"></ref>
+	</constructor-arg>
+</bean>
+
+</beans>

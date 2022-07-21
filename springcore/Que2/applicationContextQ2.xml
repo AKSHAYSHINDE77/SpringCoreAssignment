@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://www.springframework.org/schema/beans
+ https://www.springframework.org/schema/beans/spring-beans.xsd">
+ 
+ <bean id="avgbean" class="com.springcore.Que2.Average">
+ 	<property name="n1" value="25" /> 
+ 	<property name="n2" value="56" />
+ 	<property name="n3" value="84" />
+	<property name="n4" value="69" />
+ </bean>
+ 
+ </beans>
